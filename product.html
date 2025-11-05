@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Product | Yellow Green Agro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/product.css"/>
+</head>
+<body>
+  <!-- Header -->
+  <header id="ygaHeader" class="yga-header">
+    <div class="container header-wrap">
+      <a class="brand" href="shop.html">
+        <img src="assets/logo.svg" alt="YGA" class="brand-logo" onerror="this.style.display='none'">
+        <span>Yellow Green Agro</span>
+      </a>
+
+      <form class="search" role="search">
+        <input id="searchInput" type="search" placeholder="Search for products" aria-label="Search"/>
+        <button aria-label="Search"><span>🔍</span></button>
+      </form>
+
+      <nav class="head-actions">
+        <a class="login" href="#">Login / Register</a>
+        <button id="cartButton" class="cart" type="button" aria-label="Cart">
+          🛒 <span id="cartCount">0</span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Breadcrumb -->
+  <div class="container breadcrumb" id="breadcrumb"></div>
+
+  <!-- Product -->
+  <main class="container">
+    <section id="productSection" class="product">
+      <!-- Filled by JS -->
+    </section>
+
+    <!-- Related -->
+    <section class="related">
+      <div class="related-head">
+        <h3>You may also like…</h3>
+        <div class="related-actions">
+          <a id="backToCat" class="link">« Back to category</a>
+        </div>
+      </div>
+      <div id="relatedRow" class="related-row"><!-- cards injected --></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h4>Contact Us</h4>
+        <p><strong>09612 002255</strong></p>
+        <p>customercare@yga.example</p>
+      </div>
+      <div>
+        <h4>Head Office</h4>
+        <p>Biswas Shawnpil, Jigatala, Dhaka 1209</p>
+      </div>
+      <div>
+        <h4>Useful Links</h4>
+        <ul class="links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Delivery Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copy">
+      © <span id="yearSpan"></span> Yellow Green Agro
+    </div>
+  </footer>
+
+  <script src="scripts/product.js"></script>
+</body>
+</html>

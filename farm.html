@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Firm | Yellow Green Agro Ltd.</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    :root {
+      --green: #2e7d32;
+      --yellow: #f4c430;
+      --ink: #0f172a;
+      --text: #334155;
+      --muted: #f8fafc;
+      --line: #e2e8f0;
+    }
+    body {
+      font-family: Inter, system-ui, sans-serif;
+      color: var(--text);
+      margin: 0;
+      background: var(--muted);
+    }
+    header {
+      background: var(--green);
+      color: #fff;
+      text-align: center;
+      padding: 60px 16px 40px;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.1rem;
+      margin-top: 10px;
+      color: #e6f3e6;
+    }
+    .farm-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      padding: 60px 16px;
+      max-width: 1200px;
+      margin: auto;
+    }
+    .farm-card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.3s ease;
+    }
+    .farm-card:hover {
+      transform: translateY(-5px);
+    }
+    .farm-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+    .farm-card h3 {
+      color: var(--green);
+      margin: 16px;
+      font-size: 1.3rem;
+    }
+    .farm-card p {
+      margin: 0 16px 20px;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+    footer {
+      background: var(--green);
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Our Firm</h1>
+  <p>Integrated Agro System – Combining Nature, Nutrition & Sustainability</p>
+</header>
+
+<section class="farm-grid">
+  <div class="farm-card">
+    <img src="./assets/farm/cowfirm.png" alt="Cow Farm">
+    <h3>Cow Farm</h3>
+    <p>Our dairy unit ensures hygienic milking, natural feeding, and a clean cold chain for pure milk and ghee.</p>
+  </div>
+
+  <div class="farm-card">
+    <img src="./assets/farm/fishfirm.png" alt="Fish Farm">
+    <h3>Fish Farm</h3>
+    <p>Freshwater ponds cultivated with safe feed and clean water systems ensuring premium quality fish harvests.</p>
+  </div>
+
+  <div class="farm-card">
+    <img src="./assets/farm/chickenfirmboiler.png" alt="Chicken Farm">
+    <h3>Chicken Farm</h3>
+    <p>We raise healthy chickens with organic feed, ensuring tender meat and high-protein value.</p>
+  </div>
+
+  <div class="farm-card">
+    <img src="./assets/farm/chickenfirm.png" alt="Egg Farm">
+    <h3>Egg Farm</h3>
+    <p>Our poultry houses produce fresh, nutrient-rich eggs under controlled bio-secure conditions.</p>
+  </div>
+
+  <div class="farm-card">
+    <img src="./assets/farm/goatfarm.png" alt="Goat Farm">
+    <h3>Goat Farm</h3>
+    <p>Goats are raised on natural grazing systems providing healthy milk and meat for sustainable supply.</p>
+  </div>
+
+  <div class="farm-card">
+    <img src="./assets/farm/duckfirm.png" alt="Duck Farm">
+    <h3>Duck Farm</h3>
+    <p>Our ducks are reared near natural ponds for rich, flavorful eggs and meat with eco-friendly methods.</p>
+  </div>
+
+  <div class="farm-card">
+    <img src="./assets/farm/vegitablefirm.jpg" alt="Vegetable Farm">
+    <h3>Vegetable Farm</h3>
+    <p>Fresh organic vegetables are grown naturally without harmful chemicals to ensure health and taste.</p>
+  </div>
+
+  <div class="farm-card">
+    <img src="./assets/farm/fruitfirm.png" alt="Fruit Garden">
+    <h3>Fruit Garden</h3>
+    <p>Seasonal fruits like mango, guava, papaya, and banana are cultivated with love and care.</p>
+  </div>
+</section>
+
+<footer>
+  © 2025 Yellow Green Agro Ltd. | Integrated Agro Solutions for a Healthier Tomorrow
+</footer>
+
+</body>
+</html>

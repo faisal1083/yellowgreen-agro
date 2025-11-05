@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Shop | Yellow Green Agro</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles/shop.css">
+</head>
+<body>
+  <!-- ===== Header / Top Nav ===== -->
+  <header class="yga-header" id="ygaHeader">
+    <div class="container header-inner">
+      <!-- Brand -->
+      <a class="brand" href="#">
+        <!-- If you have a real SVG, place it at assets/yga-logo.svg -->
+        <img src="assets/logoyg.svg" alt="YGA" onerror="this.closest('.brand').classList.add('text-logo'); this.remove();">
+        <span class="brand-text">Yellow Green <strong>Agro</strong></span>
+      </a>
+
+      <!-- Search -->
+      <form class="search" role="search" aria-label="search products">
+        <input id="searchInput" type="search" placeholder="Search for products" autocomplete="off">
+        <button class="btn search-btn" type="submit" aria-label="Search">
+          <!-- magnifier -->
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M10 18a8 8 0 1 1 5.292-14.01A8 8 0 0 1 10 18Zm0-2a6 6 0 1 0 0-12 6 6 0 0 0 0 12Zm11.707 3.293-4.127-4.127a1 1 0 0 0-1.414 1.414l4.127 4.127a1 1 0 0 0 1.414-1.414Z" fill="currentColor"/></svg>
+        </button>
+      </form>
+
+      <!-- Actions -->
+      <nav class="actions" aria-label="account and cart">
+        <a class="action-link" href="#" id="loginLink">
+          <!-- user icon -->
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><path d="M12 12a5 5 0 1 0-5-5 5 5 0 0 0 5 5Zm0 2c-5.33 0-8 2.686-8 5a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1c0-2.314-2.67-5-8-5Z" fill="currentColor"/></svg>
+          <span>Login / Register</span>
+        </a>
+
+        <button class="action-link cart" id="cartButton" aria-label="Cart">
+          <!-- cart icon -->
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path d="M7 6h14l-1.5 9H8.5L7 6Zm-2 0H3" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="9.5" cy="19.5" r="1.5" fill="currentColor"/>
+            <circle cx="18.5" cy="19.5" r="1.5" fill="currentColor"/>
+          </svg>
+          <span class="cart-badge" id="cartCount">0</span>
+        </button>
+
+        <button class="btn offer-btn" id="offerBtn">
+          <span>Offer</span>
+        </button>
+
+        <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Optional dropdown of categories (opens on mobile via hamburger for now) -->
+    <div class="mobile-panel" id="mobilePanel" hidden>
+      <div class="panel-section">
+        <p class="panel-title">Browse Categories</p>
+        <ul class="cat-list">
+          <li><a href="#">Honey</a></li>
+          <li><a href="#">Poultry &amp; Meat</a></li>
+          <li><a href="#">Rice, Pulse &amp; Grains</a></li>
+          <li><a href="#">Oils</a></li>
+          <li><a href="#">Spices</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== Catalog Bar (Browse by Categories) ===== -->
+<section class="catalog-bar">
+  <div class="container catalog-inner">
+    <button class="cat-trigger" id="catTrigger" aria-expanded="false" aria-controls="catDropdown">
+      <span class="icon">
+        <!-- hamburger -->
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true">
+          <path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+      </span>
+      <span class="label">Browse Categories</span>
+      <span class="chev" aria-hidden="true">▾</span>
+    </button>
+
+    <!-- (Optional) you can put other quick links here later, e.g. Offer tag, filters, etc. -->
+
+    <!-- Dropdown -->
+    <div class="cat-dropdown" id="catDropdown" hidden>
+      <ul class="cat-menu" id="catMenu">
+        <!-- <li><a href="#">Honey</a></li>
+        <li><a href="#">Poultry &amp; Meat</a></li>
+        <li><a href="#">Rice, Pulse &amp; Grains</a></li>
+        <li><a href="#">Oils</a></li>
+        <li><a href="#">Signature Series</a></li>
+        <li><a href="#">Sweeteners &amp; Dairy</a></li>
+        <li><a href="#">Spices</a></li>
+        <li><a href="#">Super Foods</a></li>
+        <li><a href="#">Tea, Snacks &amp; Drinks</a></li>
+        <li><a href="#">Nuts &amp; Dates</a></li>
+        <li><a href="#">Pickle &amp; Chutney</a></li> -->
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Promo Banners (2-left stack + 1 tall right) ===== -->
+<section class="promo-block">
+  <div class="container promo-grid--two-left-one-right">
+    <!-- Left top wide -->
+    <a class="promo promo-left-top" href="#">
+      <img src="assets/banner/banner1.jpg" alt="Weekly Fresh Meat">
+    </a>
+
+    <!-- Right tall (spans two rows) -->
+    <a class="promo promo-right-tall" href="#">
+      <img src="assets/banner/banner2.jpg" alt="Refer & Earn 50৳">
+    </a>
+
+    <!-- Left bottom wide -->
+    <a class="promo promo-left-bottom" href="#">
+      <img src="assets/banner/banner3.jpg" alt="ISO Certified • 10+ Years • 250K+">
+    </a>
+  </div>
+</section>
+
+<!-- ===== Category Sections ===== -->
+<section id="catalogSections" class="catalog-sections">
+  <div class="container" id="catalogMount">
+    <!-- JS will render 11 category blocks here -->
+  </div>
+</section>
+
+<!-- ===== Our Pride / Badges ===== -->
+<section class="our-pride">
+  <div class="container pride-grid">
+    <div class="pride-item">
+      <img src="assets/footer/shop.png" alt="Physical presence" />
+      <h4>Physical presence</h4>
+      <p>23+ Outlets and Growing</p>
+    </div>
+    <div class="pride-item">
+      <img src="assets/footer/ten-years.png" alt="10 Years of Service" />
+      <h4>10 Years of Service</h4>
+      <p>200+ SKUs</p>
+    </div>
+    <div class="pride-item">
+      <img src="assets/footer/consumer.png" alt="Consumer Satisfaction" />
+      <h4>Consumer Satisfaction</h4>
+      <p>210K+ Loyal Consumers Served</p>
+    </div>
+    <div class="pride-item">
+      <img src="assets/footer/iso.png" alt="ISO Certified" />
+      <h4>ISO Certified</h4>
+      <p>An ISO Certified Company</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== Footer ===== -->
+<footer class="site-footer">
+  <div class="container footer-top">
+    <div class="brand-block">
+      <img class="footer-logo" src="assets/footer/logo-large.png" alt="Yellow Green Agro" onerror="this.style.display='none'">
+      <div class="socials">
+        <a href="#" aria-label="Facebook" class="soc fb">f</a>
+        <a href="#" aria-label="Instagram" class="soc ig">◎</a>
+        <a href="#" aria-label="YouTube" class="soc yt">▶</a>
+        <a href="#" aria-label="LinkedIn" class="soc li">in</a>
+      </div>
+      <p class="about">
+        Yellow Green Agro is an agri-tech brand focused on safe, traceable food at fair prices. We
+        work with farmers and partners to keep quality consistent from source to shelf.
+      </p>
+    </div>
+
+    <div class="footer-cols">
+      <div class="col">
+        <h5>Contact Us</h5>
+        <ul class="list">
+          <li><strong>Customer Care</strong></li>
+          <li><a href="tel:+8809612002255">09612002255</a></li>
+          <li><small>WhatsApp:</small> <a href="tel:+8801708183873">01708183873</a></li>
+          <li><a href="mailto:customercare@yga.com">customercare@yga.com</a></li>
+          <li class="mt"><strong>Corporate Sales & Retailer Only</strong></li>
+          <li><a href="tel:+8801713349631">01713349631</a> (WhatsApp)</li>
+          <li><a href="mailto:corporate@yga.com">corporate@yga.com</a></li>
+          <li class="mt"><strong>Investment Only</strong></li>
+          <li><a href="tel:+8801713322503">01713322503</a> (WhatsApp)</li>
+          <li><a href="mailto:investment@yga.com">investment@yga.com</a></li>
+        </ul>
+      </div>
+
+      <div class="col">
+        <h5>Head Office</h5>
+        <ul class="list">
+          <li>Floor 8, 15/1–15/2, Biswas Shawnpil,<br/> Jigatala, Dhaka 1209</li>
+          <li><a href="mailto:hello@yga.com">hello@yga.com</a></li>
+          <li class="mt">
+            <a class="btn-outline" href="#" aria-label="View map">⟶ View Map</a>
+          </li>
+        </ul>
+
+        <h5 class="mt">Download Our App</h5>
+        <a class="gp-badge" href="#" aria-label="Get it on Google Play">
+          <img src="assets/footer/google-play.png" alt="Get it on Google Play">
+        </a>
+      </div>
+
+      <div class="col">
+        <h5>Useful Links</h5>
+        <ul class="list link-list">
+          <li><a href="#">Impact Stories</a></li>
+          <li><a href="#">Refer &amp; Earn</a></li>
+          <li><a href="#">Become Franchisee</a></li>
+          <li><a href="#">Become a Distributor</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Delivery Policy</a></li>
+          <li><a href="#">Refund Policy</a></li>
+          <li><a href="#">Corporate Deal</a></li>
+          <li><a href="#">FAQs</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Our Blog</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="container footer-bottom">
+    <div class="copy">© <span id="yearSpan"></span> Yellow Green Agro — All rights reserved.</div>
+    <div class="payments">
+      <!-- replace with your real logos -->
+      <img src="assets/footer/payments.png" alt="Payment Methods">
+    </div>
+  </div>
+</footer>
+
+  <!-- Space for the rest of the page we’ll add later -->
+  <main class="container" style="padding:2rem 0;"></main>
+
+  <script src="scripts/shop.js"></script>
+</body>
+</html>

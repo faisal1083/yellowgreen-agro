@@ -1,0 +1,72 @@
+{
+  "categories": {
+    "poultry": {
+      "name": "Poultry & Meat",
+      "hero": "assets/hero/meat.png",
+      "items": [
+        {
+          "id": "poultry-1",
+          "name": "Beef (Bone-in)",
+          "price": 800,
+          "priceOld": null,
+          "size": "1 kg",
+          "images": [
+            "assets/products/beefboon.png",
+            "assets/products/poultry/beef-bone-in-2.jpg"
+          ],
+          "desc": "Fresh beef, bone-in. Cleaned and packed hygienically."
+        },
+        {
+          "id": "poultry-2",
+          "name": "Beijing Duck",
+          "price": 640,
+          "priceOld": 700,
+          "size": "1 kg",
+          "images": [
+            "assets/products/poultry/duck.jpg"
+          ],
+          "desc": "Farm duck, trimmed and ready to cook."
+        },
+        {
+          "id": "poultry-3",
+          "name": "Buffalo Meat",
+          "price": 850,
+          "priceOld": null,
+          "size": "1 kg",
+          "images": [
+            "assets/products/poultry/buffalo.jpg"
+          ],
+          "desc": "Lean buffalo meat with great flavor."
+        },
+        {
+          "id": "poultry-4",
+          "name": "Deshi Chicken",
+          "price": 1015,
+          "priceOld": 1090,
+          "size": "1 kg",
+          "images": [
+            "assets/products/poultry/deshi-chicken.jpg"
+          ],
+          "desc": "Local free-range chicken."
+        }
+      ]
+    },
+
+    "spices": {
+      "name": "Spices",
+      "hero": "assets/hero/spices.jpg",
+      "items": [
+        {
+          "id": "spices-1",
+          "name": "Turmeric Powder",
+          "price": 405,
+          "priceOld": null,
+          "size": "1 kg",
+          "images": ["assets/products/spices/turmeric.jpg"],
+          "desc": "Natural, strong color."
+        }
+      ]
+    }
+
+  }
+}
